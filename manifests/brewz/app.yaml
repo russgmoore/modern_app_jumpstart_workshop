@@ -185,7 +185,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: spa-dark
+  name: spa-dark
 spec:
   replicas: 1
   selector:
@@ -205,7 +205,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-name: spa-dark
+  name: spa-dark
 spec:
   ports:
     - port: 80
