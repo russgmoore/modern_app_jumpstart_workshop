@@ -27,8 +27,10 @@ spec:
         - conditions:
           - cookie: "app_version"
             value: "dark"
-          action:
+          action: 
             pass: spa-dark
+      action:
+        pass: spa
     - path: /api
       policies:
         - name: rate-limit-policy
