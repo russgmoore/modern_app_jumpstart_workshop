@@ -63,6 +63,7 @@ spec:
           upstream: inventory
           rewritePath: /api/inventory
     - path: /api/recommendations
+<<<<<<< HEAD
       splits:
         - weight: 90
           action:
@@ -74,6 +75,12 @@ spec:
             proxy:
               upstream: recommendations-v2
               rewritePath: /api/recommendations
+=======
+      action:
+        proxy:
+          upstream: recommendations
+          rewritePath: /api/recommendations
+>>>>>>> parent of 7d5c8e9 (bbb)
     - path: /images
       action:
         proxy:
